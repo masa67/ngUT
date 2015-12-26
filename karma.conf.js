@@ -1,5 +1,5 @@
 // Karma configuration
-// Generated on Sun Dec 20 2015 10:41:46 GMT+0200 (FLE Standard Time)
+// Generated on Sat Dec 26 2015 11:52:53 GMT+0200 (FLE Standard Time)
 
 module.exports = function(config) {
   config.set({
@@ -15,7 +15,10 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
-      'test/*.test.js'
+      'node_modules/angular/angular.js',
+      'node_modules/angular-mocks/angular-mocks.js',
+      'app/*.js',
+      'tests/*.test.js'
     ],
 
 
@@ -63,7 +66,7 @@ module.exports = function(config) {
     singleRun: false,
 
     // Concurrency level
-    // how many browser should be started simultanous
+    // how many browser should be started simultaneous
     concurrency: Infinity
   })
 }
